@@ -7,10 +7,12 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -24,8 +26,167 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background-image="images/dont_panic_cover.jpg">
+					<section>
+					<div class="title-left">
+						<h2>Don't Panic!</h2>
+						<h4 class="blue-text">Building a Campus Emergency Alert System</h4>
+						<h5>Chattanooga State Community College</h5>
+					</div>
+					</section>
+					<section data-background-color="#002b36">
+						<h2>Bill Crum</h2>
+						<h5>Director, Web Application Technology</h5>
+						<h4>Technology Division of Chattanooga State Community College</h4>
+						<a href="mailto:bill.crum@chattanoogastate.edu">bill.crum@chattanoogastate.edu</a>
+					</section>
+				</section>
+
+
+
+				<section>
+					<section>
+						<h2>Overview</h2>
+					</section>
+					<section>
+						<h4>Increasing Campus Safety Issues</h4>
+						<p class="blue-text">"1 Dead, 6 wounded in shootings near Illinois university campus"</p>
+					</section>
+					<section>
+						<h4>Increasing Campus Safety Issues</h4>
+						<p class="blue-text">"Oregon shooting: Gunman dead after college rampage"</p>
+					</section>
+					<section>
+						<h4>Increasing Campus Safety Issues</h4>
+						<p class="blue-text">"Chattanooga Shooting: 4 Marines Killed"</p>
+					</section>
+					<section data-background-image="images/map_naval.png">
+						<div class="comment-box-upper-left">
+							<h4>1 mile from Chattanooga State!!!</h4>
+						</div>
+					</section>
+					<section>
+						<h3>"Panic App" Purpose</h3>
+						<p>Provide unobtrusive way for Faculty/Staff to communicate with Campus Security in the event of an emergency.</p>
+					</section>
+
+				</section>
+				<section>
+					<section>
+						<h2>Project Development</h2>
+					</section>
+					<section>
+						<h3>Initial Development and Prototyping</h3>
+						<li>Dr. Tydings approached Technology with idea</li>
+						<li>Started February 2016</li>
+						<aside class="notes">
+							<li>Dr. Tydings was our College president at the time</li>
+							<li>Her school in Georgia had a "panic button" application.</li>
+						</aside>
+					</section>
+					<section>
+						<img class="plain" src="images/prototype.png">
+						<aside class="notes">
+							<li>First prototype presented to President Tydings</li>
+						</aside>
+					</section>
+					<section>
+						<h3>Continued Development and Improvements</h3>
+						<li>Input provided from Campus Safety and Security</li>
+						<li>Improvements Developed by Technology</li>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Technical Stuff!</h3>
+					</section>
+					<section>
+						<h3>Technologies/Tools Used</h3>
+						<img class="plain" src="images/qt.png">
+						<img class="plain" src="images/cpp.png">
+						<img class="plain" src="images/druplicon-small.png">
+						<img class="plain" src="images/nodejs.png">
+					</section>
+					<section>
+						<h3>Desktop Application</h3>
+						<ul>
+							<li>Built with Qt/C++</li>
+							<li>Gets information from logged in user/Active Directory</li>
+							<li>Sends alert to web backend</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Web Backend</h3>
+						<ul>
+							<li>Built in Drupal</li>
+							<li>Acts as dispatch monitor</li>
+							<li>When alert is received, handles sending of messages to campus police</li>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Present application</h3>
+					</section>
+					<section>
+						<img class="plain" src="images/panic-overview-screen.png">
+					</section>
+					<section>
+						<h3>Testing</h3>
+						<li>Performed Summer 2016</li>
+						<li>"Live" tests with Campus Security - 2 minutes average response time.</li>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Application Overview and Operation</h2>
+					</section>
+					<section>
+						<h3>Basic Operation</h3>
+						<li>Open the application by double-clicking Emergency Desktop Icon &nbsp;<img style="width: 50px; vertical-align: middle;" class="plain" src="images/emergency.png"></li>
+					</section>
+					<section>
+						<h3>Basic Operation (continued)</h3>
+						<li>Click one of the presets, then click the "Send Alert" button.</li>
+					</section>
+					<section>
+						<img class="plain" src="images/emergency-alert-system-diagram.jpg">
+					</section>
+					<section>
+						<h3>Campus Security Response</h3>
+						<li>Campus security alerted via text message to security mobile phones.</li>
+						<li>Dispatcher notified via Web interface with audible warning and emergency details.</li>
+						<li>Security deployed to reported location.</li>
+					</section>
+					<section>
+						<h3>Online Training Available</h3>
+						<a href="http://itslearn.cstcc.lan/its-learn">Technology Learning Portal<br/>(http://itslearn.cstcc.lan/its-learn)</a>
+						<li>Click "Emergency Alert System Tutorial"</li>
+						<li>Log in with TigerID and Password</li>
+						<li>Enroll in course using Enrollment Code: ITSEA2016</li>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Future Development</h2>
+					</section>
+					<section>
+						<h3>Under development</h3>
+						<li>Mobile application</li>
+					</section>
+					<section>
+						<h3>Concept</h3>
+						<li>Hardware panic button for instructor workstations</li>
+					</section>
+
+				</section>
+
+				<section>
+					<h2>Questions/Comments?</h2>
+				</section>
+
 			</div>
 		</div>
 

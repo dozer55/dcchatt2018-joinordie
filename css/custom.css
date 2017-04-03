@@ -1,0 +1,42 @@
+h2, h4, h3, h5 {
+    text-transform: none !important;
+    font-family: 'Roboto Slab', serif !important;
+}
+
+h5 {
+    font-size: .7em !important;
+}
+
+.red-text {
+    color: red !important;
+}
+
+.blue-text {
+    color: #3884b9 !important;
+}
+
+.title-left {
+    width: 600px;
+    height: auto;
+    float: left;
+    text-align: left;
+}
+
+.comment-box-upper-left {
+    width: 450px;
+    height: auto;
+    position: absolute !important;
+    top: -250px !important;
+    left: -50px !important;
+    background-color: #000;
+    padding: 40px !important;
+    opacity: 0.9;
+}
+
+.plain {
+    background-color: transparent !important;
+}
+
+li {
+    text-align: left !important;
+}
