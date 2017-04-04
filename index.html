@@ -47,6 +47,9 @@
 				<section>
 					<section>
 						<h2>Overview</h2>
+						<aside class="notes">
+							<li>Introduce increase in campus safety issues</li>
+						</aside>
 					</section>
 					<section>
 						<h4>Increasing Campus Safety Issues</h4>
@@ -58,12 +61,26 @@
 					</section>
 					<section>
 						<h4>Increasing Campus Safety Issues</h4>
-						<p class="blue-text">"Chattanooga Shooting: 4 Marines Killed"</p>
+						<p class="blue-text fragment grow">"Chattanooga Shooting: 4 Marines Killed"</p>
 					</section>
 					<section data-background-image="images/map_naval.png">
 						<div class="comment-box-upper-left">
 							<h4>1 mile from Chattanooga State!!!</h4>
 						</div>
+						<aside class="notes">
+							<li>Happened literally in our back yard</li>
+						</aside>
+					</section>
+					<section>
+						<h3>Existing Technology</h3>
+						<ul>
+							<li class="fragment fade-in">Rave Alerts for pushing alerts to students</li>
+							<li class="fragment fade-in">Emergency phones in classrooms</li>
+							<ul>
+								<li class="fragment fade-in">Old Technology</li>
+								<li class="fragment fade-in">Okay for medical emergencies, not so good for keeping things low-key</li>
+							</ul>
+						</ul>
 					</section>
 					<section>
 						<h3>"Panic App" Purpose</h3>
@@ -85,6 +102,10 @@
 						</aside>
 					</section>
 					<section>
+						<h3>Project Planning</h3>
+						<img src="images/estimates.jpg">
+					</section>
+					<section>
 						<img class="plain" src="images/prototype.png">
 						<aside class="notes">
 							<li>First prototype presented to President Tydings</li>
@@ -94,6 +115,26 @@
 						<h3>Continued Development and Improvements</h3>
 						<li>Input provided from Campus Safety and Security</li>
 						<li>Improvements Developed by Technology</li>
+					</section>
+					<section>
+						<h3>Testing</h3>
+						<ul>
+							<li>Performed Summer 2016</li>
+							<li>"Live" tests with Campus Police - 2 minutes average response time.</li>
+							<li>Tests were performed at various locations across campus</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Testing</h3>
+						<img src="images/barney_fife.gif">
+					</section>
+					<section data-background-image="images/launch.jpg">
+						<h3>Launch</h3>
+						<ul>
+							<li class="blue-text">November 2016</li>
+							<li>Information/education campaign leading up to launch</li>
+							<li>Created online user training</li>
+						</ul>
 					</section>
 				</section>
 
@@ -107,6 +148,34 @@
 						<img class="plain" src="images/cpp.png">
 						<img class="plain" src="images/druplicon-small.png">
 						<img class="plain" src="images/nodejs.png">
+					</section>
+					<section>
+						<h3>Why QT/C++?</h3>
+						<img class="plain" src="images/qt.png">
+						<img class="plain" src="images/cpp.png">
+						<p><img src="images/why.gif"></p>
+						<ul>
+							<li class="fragment fade-in">Cross-platform</li>
+							<li class="fragment fade-in">I wanted to learn C++</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Why Drupal and NodeJS?</h3>
+						<img class="plain" src="images/druplicon-small.png">
+						<img class="plain" src="images/nodejs.png">
+						<ul>
+							<li class="fragment fade-in">Drupal: Familiar with Drupal development/PHP</li>
+							<li class="fragment fade-in">Drupal: Great user experience for customer</li>
+							<li class="fragment fade-in">NodeJS: Needed an asynchronous event runtime that could communicate with my application</li>
+							<li class="fragment fade-in">NodeJS: Wanted to learn NodeJS</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Shameless Plug for Drupal Camp Chattanooga</h3>
+						<img class="plain" src="images/dcchatt_noyear_logo.png">
+						<p>Chattanooga State Community College</p>
+						<p>November 5, 2017</p>
+						<h4 class="blue-text">https://drupalcampchattanooga.com/</h4>
 					</section>
 					<section>
 						<h3>Desktop Application</h3>
@@ -132,11 +201,7 @@
 					<section>
 						<img class="plain" src="images/panic-overview-screen.png">
 					</section>
-					<section>
-						<h3>Testing</h3>
-						<li>Performed Summer 2016</li>
-						<li>"Live" tests with Campus Security - 2 minutes average response time.</li>
-					</section>
+
 				</section>
 				<section>
 					<section>
@@ -197,6 +262,8 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+				backgroundTransition: 'concave',
+				transition: 'concave',
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
