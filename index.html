@@ -48,6 +48,7 @@
 						<p><img class="plain" src="images/cscc-logo.png"></p>
 						<h5><i class="fa fa-envelope"></i> <a href="mailto:bill.crum@chattanoogastate.edu">bill.crum@chattanoogastate.edu</a></h5>
 						<h5><i class="fa fa-phone"></i> (423) 697-2639</a></h5>
+						<h5><i class="fa fa-github"></i> <a href="http://tiny.cc/panicfcf">http://tiny.cc/panicfcf</a> (slides)</h5>
 					</section>
 				</section>
 
@@ -170,7 +171,8 @@
 
 				<section data-background-image="images/panic-background-faded.jpg">
 					<section>
-						<h3>Technical Stuff!</h3>
+						<h2>Technical Stuff!</h2>
+						<img src="images/programming-flames.gif">
 					</section>
 					<section>
 						<h3>Technologies/Tools Used</h3>
@@ -180,24 +182,30 @@
 						<img class="plain" src="images/nodejs.png">
 					</section>
 					<section>
-						<h3>Why QT/C++?</h3>
-						<img class="plain" src="images/qt.png">
-						<img class="plain" src="images/cpp.png">
+						<h3>Why these technologies?</h3>
 						<p><img src="images/why.gif"></p>
+					</section>
+					<section>
+						<h3>Why QT/C++?</h3>
+						<p><img class="plain" src="images/qt.png">
+						<img class="plain" src="images/cpp.png"></p>
 						<ul>
-							<li class="fragment fade-left blue-text">Cross-platform</li>
+							<li class="fragment fade-left blue-text">Cross-platform: can compile for Windows, Apple, Linux</li>
 							<li class="fragment fade-left blue-text">I wanted to learn C++</li>
 						</ul>
 					</section>
 					<section>
-						<h3>Why Drupal and NodeJS?</h3>
+						<h3>Why Drupal/NodeJS/Socket.io?</h3>
 						<img class="plain" src="images/druplicon-small.png">
 						<img class="plain" src="images/nodejs.png">
+						<img class="plain" src="images/socketio.png">
 						<ul>
 							<li class="fragment fade-left blue-text">Drupal: Familiar with Drupal development/PHP</li>
 							<li class="fragment fade-left blue-text">Drupal: Great user experience for customer</li>
 							<li class="fragment fade-left blue-text">NodeJS: Needed an asynchronous event runtime that could communicate with my application</li>
 							<li class="fragment fade-left blue-text">NodeJS: Wanted to learn NodeJS</li>
+							<li class="fragment fade-left blue-text">Socket.io: Made bidirectional communication infinitely more simple to write</li>
+
 						</ul>
 						<aside class="notes">
 							<li>Drupal is our CMS/development framework</li>
@@ -218,8 +226,11 @@
 						<ul>
 							<li class="fragment fade-left blue-text">Built with Qt/C++</li>
 							<li class="fragment fade-left blue-text">Gets information from logged in user/Active Directory</li>
-							<li class="fragment fade-left blue-text">Sends alert to web backend</li>
+							<li class="fragment fade-left blue-text">Sends alert to web backend (Drupal) using REST call</li>
 						</ul>
+						<aside class="notes">
+							<li>Cool thing is that there is a REST module for Drupal that is reasonably easy to set up.</li>
+						</aside>
 					</section>
 					<section>
 						<h3>Web Backend</h3>
@@ -227,31 +238,28 @@
 							<li class="fragment fade-left blue-text">Built in Drupal</li>
 							<li class="fragment fade-left blue-text">Acts as dispatch monitor</li>
 							<li class="fragment fade-left blue-text">When alert is received, handles sending of messages to campus police</li>
-							<li class="fragment fade-left blue-text alert-test">Once running, will alert the dispatcher audibly and visually with a popup message</li>
+							<li class="fragment fade-left blue-text alert-test">Once running, will alert the dispatcher audibly and visually with a popup message (NodeJS, Socket.io)</li>
 							<li class="fragment fade-left blue-text"><a href="http://localhost/emergency-backend" target="_blank">Emergency Backend</a></li>
 					</section>
 				</section>
 
-				<section>
+				<section data-background-image="images/panic-background-faded.jpg">
 					<section>
-						<h3>Present application</h3>
+						<h3 data-background-image="images/panic-background-faded.jpg">Present application</h3>
 					</section>
 					<section>
 						<img class="plain" src="images/panic-overview-screen.png">
 					</section>
 
 				</section>
-				<section>
+				<section data-background-image="images/panic-background-faded.jpg">
 					<section>
 						<h2>Application Overview and Operation</h2>
 					</section>
 					<section>
 						<h3>Basic Operation</h3>
-						<li class="fragment fade-left blue-text">Open the application by double-clicking Emergency Desktop Icon &nbsp;<img style="width: 50px; vertical-align: middle;" class="plain" src="images/emergency.png"></li>
-					</section>
-					<section>
-						<h3>Basic Operation (continued)</h3>
 						<ul>
+							<li class="fragment fade-left blue-text">Open the application by double-clicking Emergency Desktop Icon &nbsp;<img style="width: 50px; vertical-align: middle;" class="plain" src="images/emergency.png"></li>
 							<li class="fragment fade-left blue-text">User clicks one of the presets, then clicks the "Send Alert" button.</li>
 						</ul>
 					</section>
@@ -268,23 +276,34 @@
 					</section>
 				</section>
 
-				<section>
+				<section data-background-image="images/panic-background-faded.jpg">
 					<section>
 						<h2>Future Development</h2>
 					</section>
 					<section>
-						<h3>Under development</h3>
-						<li>Mobile application</li>
+						<h3>Under development: Mobile application</h3>
+						<img class="plain" src="images/mobile-app.png">
 					</section>
 					<section>
 						<h3>Concept</h3>
-						<li>Hardware panic button for instructor workstations</li>
+						<img class="plain" src="images/rpzerowithswitch.jpg">
+						<ul>
+							<li>Hardware panic button for instructor workstations (Raspberry Pi Zero that communicates with web backend)</li>
+						</ul>
 					</section>
 
 				</section>
 
-				<section>
+				<section data-background-image="images/panic-background-faded.jpg">
 					<h2>Questions/Comments?</h2>
+				</section>
+
+				<section data-background-image="images/panic-background-faded.jpg">
+					<h2>Thank You!</h2>
+					<h3>Bill Crum</h3>
+					<h5><i class="fa fa-envelope"></i> <a href="mailto:bill.crum@chattanoogastate.edu">bill.crum@chattanoogastate.edu</a></h5>
+					<h5><i class="fa fa-phone"></i> (423) 697-2639</a></h5>
+					<h5><i class="fa fa-github"></i> <a href="http://tiny.cc/panicfcf">http://tiny.cc/panicfcf</a> (slides)</h5>
 				</section>
 
 			</div>
