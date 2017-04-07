@@ -14,7 +14,9 @@
 		<link rel="stylesheet" href="css/custom.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
+
 		<!-- Printing and PDF exports -->
+		<script src="https://use.fontawesome.com/6a0ad31a09.js"></script>
 		<script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
@@ -22,28 +24,34 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous">
+		</script>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background-image="images/dont_panic_cover.jpg">
+				<section data-background-image="images/panic-background-2.jpg">
 					<section>
 					<div class="title-left">
-						<h2>Don't Panic!</h2>
-						<h4 class="blue-text">Building a Campus Emergency Alert System</h4>
+						<h2 class="shadow uppercase">Don't Panic!</h2>
+						<h4 class="blue-text uppercase">Building a Campus Emergency Alert System</h4>
 						<h5>Chattanooga State Community College</h5>
+						<h5>Presented at THEITS 2017</h5>
 					</div>
 					</section>
-					<section data-background-image="images/dont_panic_secondary.jpg">
+					<section data-background-image="images/panic-background-faded.jpg">
 						<h3>Bill Crum</h3>
-						<h5>Director, Web Application Technology</h5>
-						<h4>Technology Division</h4>
+						<h4>Director, Web Application Technology</h4>
 						<p><img class="plain" src="images/cscc-logo.png"></p>
-						<a href="mailto:bill.crum@chattanoogastate.edu">bill.crum@chattanoogastate.edu</a>
+						<h5><i class="fa fa-envelope"></i> <a href="mailto:bill.crum@chattanoogastate.edu">bill.crum@chattanoogastate.edu</a></h5>
+						<h5><i class="fa fa-phone"></i> (423) 697-2639</a></h5>
 					</section>
 				</section>
 
-				<section data-background-image="images/dont_panic_secondary.jpg">
+				<section data-background-image="images/panic-background-faded.jpg">
 					<section>
 						<h2>Overview</h2>
 						<aside class="notes">
@@ -51,15 +59,15 @@
 						</aside>
 					</section>
 					<section>
-						<h4>Increasing Campus Safety Issues</h4>
+						<h3>Increasing Campus Safety Issues</h3>
 						<p class="blue-text">"1 Dead, 6 wounded in shootings near Illinois university campus"</p>
 					</section>
 					<section>
-						<h4>Increasing Campus Safety Issues</h4>
+						<h3>Increasing Campus Safety Issues</h3>
 						<p class="blue-text">"Oregon shooting: Gunman dead after college rampage"</p>
 					</section>
 					<section>
-						<h4>Increasing Campus Safety Issues</h4>
+						<h3>Increasing Campus Safety Issues</h3>
 						<p class="blue-text fragment grow">"Chattanooga Shooting: 4 Marines Killed"</p>
 					</section>
 					<section data-background-image="images/map_naval.png">
@@ -73,21 +81,25 @@
 					<section>
 						<h3>Existing Technology</h3>
 						<ul>
-							<li class="fragment fade-in blue-text">Rave Alerts for pushing alerts to students</li>
-							<li class="fragment fade-in blue-text">Emergency phones in classrooms</li>
+							<li class="fragment fade-left blue-text">Rave Alerts for pushing alerts to students</li>
+							<li class="fragment fade-left blue-text">Emergency phones in classrooms</li>
 							<ul>
-								<li class="fragment fade-in">Old Technology</li>
-								<li class="fragment fade-in">Okay for medical emergencies, not so good for keeping things low-key</li>
+								<li class="fragment fade-left">Old Technology</li>
+								<li class="fragment fade-left">Okay for medical emergencies, not so good for keeping things low-key</li>
+							</ul>
+							<li class="fragment fade-left blue-text">Cell Phone</li>
+							<ul>
+								<li class="fragment fade-left">Again, not so good for keeping things low-key</li>
 							</ul>
 						</ul>
 					</section>
 					<section>
 						<h3>"Panic App" Purpose</h3>
-						<p class="fragment fade-in blue-text">Provide unobtrusive way for Faculty/Staff to communicate with Campus Security in the event of an emergency.</p>
+						<p class="fragment fade-left blue-text">Provide unobtrusive way for Faculty/Staff to communicate with Campus Security in the event of an emergency.</p>
 					</section>
 
 				</section>
-				<section data-background-image="images/dont_panic_secondary.jpg">
+				<section data-background-image="images/panic-background-faded.jpg">
 					<section>
 						<h2>Project Development</h2>
 							<img src="images/estimates.jpg">
@@ -97,8 +109,8 @@
 					</section>
 					<section>
 						<h3>Project Inception</h3>
-						<li>Dr. Tydings approached Technology with idea</li>
-						<li>Started February 2016</li>
+						<li class="fragment fade-left blue-text">Dr. Tydings approached Technology with idea</li>
+						<li class="fragment fade-left blue-text">Started February 2016</li>
 						<aside class="notes">
 							<li>Dr. Tydings was our College president at the time</li>
 							<li>Her school in Georgia had a "panic button" application.</li>
@@ -113,32 +125,50 @@
 					</section>
 					<section>
 						<h3>Continued Development and Improvements</h3>
-						<li>Input provided from Campus Safety and Security</li>
-						<li>Improvements Developed by Technology</li>
+						<li class="fragment fade-left blue-text">Input provided from Campus Safety and Security</li>
+						<li class="fragment fade-left blue-text">Improvements Developed by Technology</li>
 					</section>
 					<section>
 						<h3>Testing</h3>
 						<ul>
-							<li>Performed Summer 2016</li>
-							<li>"Live" tests with Campus Police - 2 minutes average response time.</li>
-							<li>Tests were performed at various locations across campus</li>
+							<li class="fragment fade-left blue-text">Performed Summer 2016</li>
+							<li class="fragment fade-left blue-text">Tests were performed at various locations across campus</li>
 						</ul>
+						<aside class="notes">
+							<li>Testing consisted of me scheduling tests with campus police, sitting in various locations across campus, and firing an event.</li>
+							<li>Make sure that you communicate with your campus police prior to testing, or you could panic them unnecessarily.</li>
+						</aside>
 					</section>
 					<section>
 						<h3>Testing</h3>
 						<img src="images/barney_fife.gif">
+						<aside class="notes">
+							<li>Relate story of first test.</li>
+							<li>By the way, I'm not saying our campus police are like Barney Fife...they're great.</li>
+						</aside>
+					</section>
+					<section>
+						<h3>Testing Results</h3>
+						<ul>
+							<li class="fragment fade-left blue-text">"Live" tests with Campus Police - 2 minutes average response time.</li>
+						</ul>
 					</section>
 					<section data-background-image="images/launch.jpg">
 						<h3>Launch</h3>
 						<ul>
-							<li class="blue-text">November 2016</li>
-							<li class="white-text">Information/education campaign leading up to launch</li>
-							<li class="white-text">Created online user training</li>
+							<li class="fragment fade-left white-text">November 2016</li>
+							<li class="fragment fade-left white-text">Information/education campaign leading up to launch</li>
+							<li class="fragment fade-left white-text">Created online user training</li>
 						</ul>
+						<aside class="notes">
+							<li>E-mail and campus announcements</li>
+							<li>Presented at various meetings</li>
+							<li>Built a training module for employees to complete</li>
+						</aside>
 					</section>
 				</section>
 
-				<section>
+				<section data-background-image="images/panic-background-faded.jpg">
 					<section>
 						<h3>Technical Stuff!</h3>
 					</section>
@@ -155,8 +185,8 @@
 						<img class="plain" src="images/cpp.png">
 						<p><img src="images/why.gif"></p>
 						<ul>
-							<li class="fragment fade-in">Cross-platform</li>
-							<li class="fragment fade-in">I wanted to learn C++</li>
+							<li class="fragment fade-left blue-text">Cross-platform</li>
+							<li class="fragment fade-left blue-text">I wanted to learn C++</li>
 						</ul>
 					</section>
 					<section>
@@ -164,33 +194,41 @@
 						<img class="plain" src="images/druplicon-small.png">
 						<img class="plain" src="images/nodejs.png">
 						<ul>
-							<li class="fragment fade-in">Drupal: Familiar with Drupal development/PHP</li>
-							<li class="fragment fade-in">Drupal: Great user experience for customer</li>
-							<li class="fragment fade-in">NodeJS: Needed an asynchronous event runtime that could communicate with my application</li>
-							<li class="fragment fade-in">NodeJS: Wanted to learn NodeJS</li>
+							<li class="fragment fade-left blue-text">Drupal: Familiar with Drupal development/PHP</li>
+							<li class="fragment fade-left blue-text">Drupal: Great user experience for customer</li>
+							<li class="fragment fade-left blue-text">NodeJS: Needed an asynchronous event runtime that could communicate with my application</li>
+							<li class="fragment fade-left blue-text">NodeJS: Wanted to learn NodeJS</li>
 						</ul>
+						<aside class="notes">
+							<li>Drupal is our CMS/development framework</li>
+							<li>We can create excellent user experiences and interfaces</li>
+							<li>Needed an asynchronous event runtime that could communicate with my application</li>
+							<li>Wanted to learn NodeJS</li>
+						</aside>
 					</section>
 					<section>
 						<h3>Shameless Plug for Drupal Camp Chattanooga</h3>
 						<img class="plain" src="images/dcchatt_noyear_logo.png">
 						<p>Chattanooga State Community College</p>
-						<p>November 5, 2017</p>
+						<p>November 4, 2017</p>
 						<h4 class="blue-text">https://drupalcampchattanooga.com/</h4>
 					</section>
 					<section>
 						<h3>Desktop Application</h3>
 						<ul>
-							<li>Built with Qt/C++</li>
-							<li>Gets information from logged in user/Active Directory</li>
-							<li>Sends alert to web backend</li>
+							<li class="fragment fade-left blue-text">Built with Qt/C++</li>
+							<li class="fragment fade-left blue-text">Gets information from logged in user/Active Directory</li>
+							<li class="fragment fade-left blue-text">Sends alert to web backend</li>
 						</ul>
 					</section>
 					<section>
 						<h3>Web Backend</h3>
 						<ul>
-							<li>Built in Drupal</li>
-							<li>Acts as dispatch monitor</li>
-							<li>When alert is received, handles sending of messages to campus police</li>
+							<li class="fragment fade-left blue-text">Built in Drupal</li>
+							<li class="fragment fade-left blue-text">Acts as dispatch monitor</li>
+							<li class="fragment fade-left blue-text">When alert is received, handles sending of messages to campus police</li>
+							<li class="fragment fade-left blue-text alert-test">Once running, will alert the dispatcher audibly and visually with a popup message</li>
+							<li class="fragment fade-left blue-text"><a href="http://localhost/emergency-backend" target="_blank">Emergency Backend</a></li>
 					</section>
 				</section>
 
@@ -209,27 +247,24 @@
 					</section>
 					<section>
 						<h3>Basic Operation</h3>
-						<li>Open the application by double-clicking Emergency Desktop Icon &nbsp;<img style="width: 50px; vertical-align: middle;" class="plain" src="images/emergency.png"></li>
+						<li class="fragment fade-left blue-text">Open the application by double-clicking Emergency Desktop Icon &nbsp;<img style="width: 50px; vertical-align: middle;" class="plain" src="images/emergency.png"></li>
 					</section>
 					<section>
 						<h3>Basic Operation (continued)</h3>
-						<li>Click one of the presets, then click the "Send Alert" button.</li>
+						<ul>
+							<li class="fragment fade-left blue-text">User clicks one of the presets, then clicks the "Send Alert" button.</li>
+						</ul>
 					</section>
 					<section>
 						<img class="plain" src="images/emergency-alert-system-diagram.jpg">
 					</section>
 					<section>
 						<h3>Campus Security Response</h3>
-						<li>Campus security alerted via text message to security mobile phones.</li>
-						<li>Dispatcher notified via Web interface with audible warning and emergency details.</li>
-						<li>Security deployed to reported location.</li>
-					</section>
-					<section>
-						<h3>Online Training Available</h3>
-						<a href="http://itslearn.cstcc.lan/its-learn">Technology Learning Portal<br/>(http://itslearn.cstcc.lan/its-learn)</a>
-						<li>Click "Emergency Alert System Tutorial"</li>
-						<li>Log in with TigerID and Password</li>
-						<li>Enroll in course using Enrollment Code: ITSEA2016</li>
+						<ul>
+							<li class="fragment fade-left blue-text">Campus security alerted via text message to security mobile phones.</li>
+							<li class="fragment fade-left blue-text">Dispatcher notified via Web interface with audible warning and emergency details.</li>
+							<li class="fragment fade-left blue-text">Security deployed to reported location.</li>
+						</ul>
 					</section>
 				</section>
 
@@ -262,7 +297,6 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
-				backgroundTransition: 'concave',
 				transition: 'concave',
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
@@ -272,6 +306,47 @@
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
+			});
+
+			function notifyMe(alerttype) {
+				// Let's check if the browser supports notifications
+				if (!("Notification" in window)) {
+					alert("This browser does not support system notifications");
+				}
+
+				// Let's check whether notification permissions have already been granted
+				else if (Notification.permission === "granted") {
+					// If it's okay let's create a notification
+					var options = {
+						body: "An alert has been activated.",
+						icon: 'http://itsdev.cstcc.lan/emergency_backend/sites/default/files/alert-icon.png',
+					}
+					var audio = new Audio('http://itsdev.cstcc.lan/emergency_backend/sites/default/files/weather-alert.mp3');
+					audio.play();
+					var notification = new Notification(alerttype+" alert!",options);
+				}
+
+				// Otherwise, we need to ask the user for permission
+				else if (Notification.permission !== 'denied') {
+					Notification.requestPermission(function (permission) {
+						// If the user accepts, let's create a notification
+						if (permission === "granted") {
+							var options = {
+								body: "An alert has been activated.",
+								icon: 'http://itsdev.cstcc.lan/emergency_backend/sites/default/files/alert-icon.png'
+							}
+							var audio = new Audio('http://itsdev.cstcc.lan/emergency_backend/sites/default/files/alert-chime.mp3');
+							audio.play();
+							var notification = new Notification(alerttype+" alert !",options);
+						}
+					});
+				}
+
+				// Finally, if the user has denied notifications and you
+				// want to be respectful there is no need to bother them any more.
+			}
+			$('li.alert-test').click(function(){
+				notifyMe("Test notification");
 			});
 		</script>
 	</body>

@@ -1,6 +1,13 @@
+@import url(../../lib/font/league-gothic/league-gothic.css);
 h2, h4, h3, h5 {
     text-transform: none !important;
-    font-family: 'Roboto Slab', serif !important;
+
+    font-family: "League Gothic", sans-serif;
+    text-shadow: 5px 3px 3px #000000 !important;
+}
+
+h2, h3, h4 {
+    text-transform: uppercase !important;
 }
 
 h5 {
@@ -19,11 +26,20 @@ h5 {
     color: #ffffff !important;
 }
 
+.red-text {
+    color: #920011 !important;
+}
+
+.uppercase {
+    text-transform: uppercase !important;
+}
+
 .title-left {
     width: 600px;
     height: auto;
     float: left;
     text-align: left;
+    margin-top: -100px !important;
 }
 
 .comment-box-upper-left {
@@ -43,4 +59,12 @@ h5 {
 
 li {
     text-align: left !important;
+}
+
+.shadow {
+    text-shadow: 5px 5px 5px #000000 !important;
+}
+
+.alert-test {
+    cursor: pointer;
 }
