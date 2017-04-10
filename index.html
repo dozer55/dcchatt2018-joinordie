@@ -49,14 +49,28 @@
 						<h5><i class="fa fa-envelope"></i> <a href="mailto:bill.crum@chattanoogastate.edu">bill.crum@chattanoogastate.edu</a></h5>
 						<h5><i class="fa fa-phone"></i> (423) 697-2639</a></h5>
 						<h5><i class="fa fa-github"></i> <a href="http://tiny.cc/panicfcf">http://tiny.cc/panicfcf</a> (slides)</h5>
+						<aside class="notes">
+							<li>It's my pleasure to share with you how we built a campus emergency alert system</li>
+						</aside>
 					</section>
 				</section>
 
 				<section data-background-image="images/panic-background-faded.jpg">
 					<section>
 						<h2>Overview</h2>
+						<ul>
+							<li>Overview of Project</li>
+							<li>Project History & Development</li>
+							<li>Technical Stuff</li>
+							<li>Present Application</li>
+							<li>Application Overview & Operation</li>
+							<li>Lessons Learned</li>
+							<li>Future Development</li>
+							<li>Questions/Comments</li>
+						</ul>
 						<aside class="notes">
 							<li>Introduce increase in campus safety issues</li>
+							<li>We're all unfortunately aware of headlines</li>
 						</aside>
 					</section>
 					<section>
@@ -77,7 +91,10 @@
 							<h4>1 mile from Chattanooga State!!!</h4>
 						</div>
 						<aside class="notes">
+							<li>Hit really close to home for us in 2015</li>
 							<li>Happened literally in our back yard</li>
+							<li>Unfortunately tragedy can sometimes spur us to action</li>
+							<li>Highlighted a need on campus</li>
 						</aside>
 					</section>
 					<section>
@@ -94,6 +111,12 @@
 								<li class="fragment fade-left">Again, not so good for keeping things low-key</li>
 							</ul>
 						</ul>
+						<aside class="notes">
+							<li>In examining our existing technology, we identified our current assets</li>
+							<li>Rave alerts for mass messaging to Faculty, Staff, and Students (TigerAlert)</li>
+							<li>Emergency phones and mobile phones for phoning in emergencies</li>
+							<li>Needed a way to unobtrusively communicate with campus police</li>
+						</aside>
 					</section>
 					<section>
 						<h3>"Panic App" Purpose</h3>
@@ -114,8 +137,9 @@
 						<li class="fragment fade-left blue-text">Dr. Tydings approached Technology with idea</li>
 						<li class="fragment fade-left blue-text">Started February 2016</li>
 						<aside class="notes">
-							<li>Dr. Tydings was our College president at the time</li>
-							<li>Her school in Georgia had a "panic button" application.</li>
+							<li>Dr. Tydings, who was our president at the time, approached the Technology Division with the project...Athens Tech had developed a similar system, which they referred to as the "panic" button.</li>
+							<li>She approached our Associate VP with the possibility of developing something similar, and he approached me "We can do this, right?" :)</li>
+							<li>I began development in February of 2016</li>
 						</aside>
 					</section>
 					<section>
@@ -129,6 +153,11 @@
 						<h3>Continued Development and Improvements</h3>
 						<li class="fragment fade-left blue-text">Input provided from Campus Safety and Security</li>
 						<li class="fragment fade-left blue-text">Improvements Developed by Technology</li>
+						<aside class="notes">
+							<li>Came up with initial prototype and presented to Dr. Tydings</li>
+							<li>Met with Campus Safety and Security for their input</li>
+							<li>Implemented ideas from these meetings, as well as our own improvements</li>
+						</aside>
 					</section>
 					<section>
 						<h3>Testing</h3>
@@ -137,15 +166,16 @@
 							<li class="fragment fade-left blue-text">Tests were performed at various locations across campus</li>
 						</ul>
 						<aside class="notes">
-							<li>Testing consisted of me scheduling tests with campus police, sitting in various locations across campus, and firing an event.</li>
-							<li>Make sure that you communicate with your campus police prior to testing, or you could panic them unnecessarily.</li>
+							<li>Began "live" testing in the summer of 2016</li>
+							<li>Testing consisted of me scheduling tests with campus police,My laptop and I traveled to various location on campus, fired an alert, and timed responses</li>
 						</aside>
 					</section>
 					<section>
 						<h3>Testing</h3>
+						<p>Tip: Make sure you communicate with campus police prior to testing!!!</p>
 						<img src="images/barney_fife.gif">
 						<aside class="notes">
-							<li>Relate story of first test.</li>
+							<li>Tip: make sure you alert campus police that you are testing the system. While we communicated with the police chief about our first test, he didn't tell his officers, and needless to say their adrenaline was pumping!</li>
 							<li>By the way, I'm not saying our campus police are like Barney Fife...they're great.</li>
 						</aside>
 					</section>
@@ -154,6 +184,9 @@
 						<ul>
 							<li class="fragment fade-left blue-text">"Live" tests with Campus Police - 2 minutes average response time.</li>
 						</ul>
+						<aside class="notes">
+							<li>Testing results - campus police were very responsive and responded with an average response time of 2 minutes for all areas tested (tested all buildings on campus)</li>
+						</aside>
 					</section>
 					<section data-background-image="images/launch.jpg">
 						<h3>Launch</h3>
@@ -163,9 +196,9 @@
 							<li class="fragment fade-left white-text">Created online user training</li>
 						</ul>
 						<aside class="notes">
-							<li>E-mail and campus announcements</li>
-							<li>Presented at various meetings</li>
-							<li>Built a training module for employees to complete</li>
+							<li>Launched in November 2016</li>
+							<li>Leading up to the launch, we conducted an information campaign where we met with departments to announce, sent e-mails, and created mandatory online training for faculty and staff to complete</li>
+							<li>So on to how we built this thing!</li>
 						</aside>
 					</section>
 				</section>
@@ -175,12 +208,28 @@
 						<h2>Technical Stuff!</h2>
 						<img src="images/programming-flames.gif">
 					</section>
+					<section data-transition="fade-in">
+						<img class="plain" src="images/panicapp1.png">
+					</section>
+					<section data-transition="fade-in">
+						<img class="plain" src="images/panicapp2.png">
+					</section>
+					<section data-transition="fade-in">
+						<img class="plain" src="images/panicapp3.png">
+					</section>
+					<section data-transition="fade-in">
+						<img class="plain" src="images/panicapp4.png">
+					</section>
+					<section data-transition="fade-in">
+						<img class="plain" src="images/panicapp5.png">
+					</section>
 					<section>
 						<h3>Technologies/Tools Used</h3>
 						<img class="plain" src="images/qt.png">
 						<img class="plain" src="images/cpp.png">
 						<img class="plain" src="images/druplicon-small.png">
 						<img class="plain" src="images/nodejs.png">
+						<img class="plain" src="images/socketio.png">
 					</section>
 					<section>
 						<h3>Why these technologies?</h3>
@@ -210,9 +259,9 @@
 						</ul>
 						<aside class="notes">
 							<li>Drupal is our CMS/development framework</li>
-							<li>We can create excellent user experiences and interfaces</li>
-							<li>Needed an asynchronous event runtime that could communicate with my application</li>
-							<li>Wanted to learn NodeJS</li>
+							<li>familiarity with Drupal/PHP, Ability to create nice, easy to manage user experience for the web side of the project</li>
+							<li>NodeJS allows for asynchronous communication, which was needed for the dispatch element of the application</li>
+							<li>Socket.io made it easy to build the asynchronous bi-directional component of the application</li>
 						</aside>
 					</section>
 					<section>
@@ -234,6 +283,9 @@
 						</aside>
 					</section>
 					<section>
+						<img class="plain" src="images/panic-overview-screen.png">
+					</section>
+					<section>
 						<h3>Web Backend</h3>
 						<ul>
 							<li class="fragment fade-left blue-text">Built in Drupal</li>
@@ -243,14 +295,6 @@
 							<li class="fragment fade-left blue-text"><a href="http://localhost/emergency-backend" target="_blank">Emergency Backend</a></li>
 					</section>
 				</section>
-
-				<section data-background-image="images/panic-background-faded.jpg">
-					<section>
-						<h3 data-background-image="images/panic-background-faded.jpg">Present application</h3>
-					</section>
-					<section>
-						<img class="plain" src="images/panic-overview-screen.png">
-					</section>
 
 				</section>
 				<section data-background-image="images/panic-background-faded.jpg">
@@ -283,7 +327,10 @@
 					</section>
 					<section>
 						<h3>Our Campus Police Rock!</h3>
-						<img class="plain" src="images/approve.gif">
+						<img style="width: 400px;" class="plain" src="images/approve.gif">
+						<aside class="notes">
+							<li>I can't say enough about our campus police. They were very supportive and we could not have succeeded without them.</li>
+						</aside>
 					</section>
 					<section>
 						<h3>Communication is Key</h3>
@@ -296,9 +343,17 @@
 						<h3>Test, Test, and Test Again</h3>
 						<img class="plain" src="images/crash.gif">
 					</section>
-
 				</section>
 
+				<section data-background-image="images/panic-background-faded.jpg">
+					<section>
+						<h2>Limitations</h2>
+						<ul>
+							<li class="fragment fade-left blue-text">Works well in situations where students can't see screen</li>
+							<li class="fragment fade-left blue-text">Still difficult to use in a lab situation where instructor workstations are projecting to a screen</li>
+						</ul>
+					</section>
+				</section>
 				<section data-background-image="images/panic-background-faded.jpg">
 					<section>
 						<h2>Future Development</h2>
@@ -313,6 +368,30 @@
 						<ul>
 							<li>Hardware panic button for instructor workstations (Raspberry Pi Zero that communicates with web backend)</li>
 						</ul>
+					</section>
+					</section>
+
+					<section data-background-image="images/panic-background-faded.jpg">
+						<section>
+							<h2>Results</h2>
+						</section>
+						<section>
+							<h3>Show me the money!</h3>
+							<img class="plain" src="images/obiwan.gif">
+							<ul>
+								<li>I don't have a fancy infographic, but our police chief tells me that we saved approximately $15K from his budget</li>
+							</ul>
+						</section>
+						<section>
+							<h3>Fortunately have not had to utilize this application</h3>
+							<ul>
+								<li class="fragment fade-left blue-text">Faculty/staff have indicated that they feel safer having access to tool</li>
+							</ul>
+						</section>
+						<aside class="notes">
+							<li>Perhaps the only application I've ever built that is better if it's not utilized!</li>
+							<li>Faculty/staff feel safer--to me, this is the biggest win of all!</li>
+						</aside>
 					</section>
 
 				</section>
