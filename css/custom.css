@@ -68,3 +68,10 @@ li {
 .alert-test {
     cursor: pointer;
 }
+
+.free-stickers {
+    color: #17ff2e;
+    transform: rotate(-35deg);
+    top: 220px;
+    position: absolute;
+}
