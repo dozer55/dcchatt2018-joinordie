@@ -1,477 +1,419 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Don't Panic</title>
+    <title>Join, or Die.</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/moon.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-		<link rel="stylesheet" href="css/custom.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
 
-		<!-- Printing and PDF exports -->
-		<script src="https://use.fontawesome.com/6a0ad31a09.js"></script>
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-		<script
-			src="https://code.jquery.com/jquery-3.2.1.min.js"
-			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-			crossorigin="anonymous">
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-background-image="images/panic-background-2.jpg">
-					<section>
-					<div class="title-left">
-						<h2 class="shadow uppercase">Don't Panic!</h2>
-						<h4 class="white-text uppercase">Building a Campus Emergency Alert System</h4>
-						<h5>Chattanooga State Community College</h5>
-						<h5>Presented at THEITS 2017</h5>
-					</div>
-					</section>
-					<section data-background-image="images/panic-background-faded.jpg">
-						<h3>Bill Crum</h3>
-						<h4>Director, Web Application Technology</h4>
-						<p><img class="plain" src="images/cscc-logo.png"></p>
-						<h5><i class="fa fa-envelope"></i> <a href="mailto:bill.crum@chattanoogastate.edu">bill.crum@chattanoogastate.edu</a></h5>
-						<h5><i class="fa fa-phone"></i> (423) 697-2639</a></h5>
-						<h5><i class="fa fa-github"></i> <a href="http://tiny.cc/panicfcf">http://tiny.cc/panicfcf</a> (slides)</h5>
-						<aside class="notes">
-							<li>It's my pleasure to share with you how we built a campus emergency alert system</li>
-						</aside>
-					</section>
-				</section>
+    <!-- Printing and PDF exports -->
+    <script src="https://use.fontawesome.com/6a0ad31a09.js"></script>
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <section>
+                <div class="title-right">
+                    <img style="width: 400px;" class="plain" src="images/joinordie.jpg">
+                </div>
+                <div class="title-left">
+                    <h2 class="shadow uppercase">Join, or Die.</h2>
+                    <h4 class="white-text uppercase">Converting an Organization to Drupal</h4>
+                    <h5>Chattanooga State Community College</h5>
+                    <h5>Presented at Drupal Camp Chattanooga 2018</h5>
+                </div>
+            </section>
+            <section>
+                <div class="title-left">
+                    <img style='margin-top: 70px;' src="images/crum.jpg">
+                    <h3>Bill Crum</h3>
+                    <h4>Director, Web Applications Technology</h4>
+                    <h5><i class="fa fa-envelope"></i> <a
+                            href="mailto:bill.crum@chattanoogastate.edu">bill.crum@chattanoogastate.edu</a>
+                    </h5>
+                    <h5><i class="fa fa-phone"></i> (423) 697-2639</a></h5>
+                </div>
+                <div class="title-right">
+                    <img style='margin-top: 70px;' src="images/fannin.jpg">
+                    <h3>Charles Fannin</h3>
+                    <h4>Web Developer, Web Applications Technology</h4>
+                    <h5><i class="fa fa-envelope"></i> <a
+                            href="mailto:charles.fannin@chattanoogastate.edu">charles.fannin@chattanoogastate.edu</a>
+                    </h5>
+                    <h5><i class="fa fa-phone"></i> (423) 697-5522</a></h5>
+                </div>
+                <p><img class="plain" src="images/cscc-logo.png"></p>
 
-				<section data-background-image="images/panic-background-faded.jpg">
-					<section>
-						<h2>Overview</h2>
-						<ul>
-							<li>Overview of Project</li>
-							<li>Project History & Development</li>
-							<li>Technical Stuff</li>
-							<li>Application Overview & Operation</li>
-							<li>Lessons Learned</li>
-							<li>Limitations</li>
-							<li>Future Development</li>
-							<li>Results</li>
-							<li>Questions/Comments</li>
-						</ul>
-						<aside class="notes">
-							<li>Introduce increase in campus safety issues</li>
-							<li>We're all too aware of headlines</li>
-						</aside>
-					</section>
-					<section>
-						<h3>Increasing Campus Safety Issues</h3>
-						<p class="white-text">"1 Dead, 6 wounded in shootings near Illinois university campus"</p>
-					</section>
-					<section>
-						<h3>Increasing Campus Safety Issues</h3>
-						<p class="white-text">"Oregon shooting: Gunman dead after college rampage"</p>
-					</section>
-					<section>
-						<h3>Increasing Campus Safety Issues</h3>
-						<p class="white-text fragment grow">"July 2015 - Chattanooga Shooting: 4 Marines Killed"</p>
-						<img src="images/nooga-cross.jpg">
-					</section>
-					<section data-background-image="images/map_naval.png">
-						<div class="comment-box-upper-left">
-							<h4>1 mile from Chattanooga State!!!</h4>
-						</div>
-						<aside class="notes">
-							<li>Hit really close to home for us in 2015</li>
-							<li>Happened literally in our back yard</li>
-							<li>Unfortunately tragedy can sometimes spur us to action</li>
-							<li>Highlighted a need on campus</li>
-						</aside>
-					</section>
-					<section>
-						<h3>Existing Technology</h3>
-						<ul>
-							<li class="fragment fade-left white-text">Rave Alerts for pushing alerts to students</li>
-							<li class="fragment fade-left white-text">Emergency phones in classrooms</li>
-							<ul>
-								<li class="fragment fade-left">Old Technology</li>
-								<li class="fragment fade-left">Okay for medical emergencies, not so good for keeping things low-key</li>
-							</ul>
-							<li class="fragment fade-left white-text">Cell Phone</li>
-							<ul>
-								<li class="fragment fade-left">Again, not so good for keeping things low-key</li>
-							</ul>
-						</ul>
-						<aside class="notes">
-							<li>In examining our existing technology, we identified our current assets</li>
-							<li>Rave alerts for mass messaging to Faculty, Staff, and Students (TigerAlert)</li>
-							<li>Emergency phones and mobile phones for phoning in emergencies</li>
-							<li>Needed a way to unobtrusively communicate with campus police</li>
-						</aside>
-					</section>
-					<section>
-						<h3>"Panic App" Purpose</h3>
-						<p class="fragment fade-left white-text">Provide unobtrusive way for Faculty/Staff to communicate with Campus <Police></Police> in the event of an emergency.</p>
-					</section>
+                <h5><i class="fa fa-github"></i> <a href="http://tiny.cc/panicfcf">http://tiny.cc/panicfcf</a>
+                    (slides)</h5>
+                <aside class="notes">
+                    <li>It's my pleasure to share with you how we built a campus emergency alert
+                        system
+                    </li>
+                </aside>
+            </section>
+        </section>
 
-				</section>
-				<section data-background-image="images/panic-background-faded.jpg">
-					<section>
-						<h2>Project History & Development</h2>
-							<img src="images/estimates.jpg">
-						<aside class="notes">
-							<li>Introduce project</li>
-						</aside>
-					</section>
-					<section>
-						<h3>Project Inception</h3>
-						<li class="fragment fade-left white-text">Dr. Tydings approached Technology with idea</li>
-						<li class="fragment fade-left white-text">Started February 2016</li>
-						<aside class="notes">
-							<li>Dr. Tydings, who was our president at the time, approached the Technology Division with the project...Athens Tech had developed a similar system, which they referred to as the "panic" button.</li>
-							<li>She approached our Associate VP with the possibility of developing something similar, and he approached me "We can do this, right?" :)</li>
-							<li>I began development in February of 2016</li>
-						</aside>
-					</section>
-					<section>
-						<img class="plain" src="images/prototype.png">
-						<aside class="notes">
-							<li>First prototype presented to President Tydings</li>
-							<li>Basic functionality, location from computer, ability to send message.</li>
-						</aside>
-					</section>
-					<section>
-						<h3>Continued Development and Improvements</h3>
-						<li class="fragment fade-left white-text">Input provided from Campus Safety and Security</li>
-						<li class="fragment fade-left white-text">Improvements Developed by Technology</li>
-						<aside class="notes">
-							<li>Came up with initial prototype and presented to Dr. Tydings</li>
-							<li>Met with Campus Safety and Security for their input</li>
-							<li>Implemented ideas from these meetings, as well as our own improvements</li>
-						</aside>
-					</section>
-					<section>
-						<h3>Testing</h3>
-						<ul>
-							<li class="fragment fade-left white-text">Performed Summer 2016</li>
-							<li class="fragment fade-left white-text">Tests were performed at various locations across campus</li>
-						</ul>
-						<aside class="notes">
-							<li>Began "live" testing in the summer of 2016</li>
-							<li>Testing consisted of me scheduling tests with campus police,My laptop and I traveled to various location on campus, fired an alert, and timed responses</li>
-						</aside>
-					</section>
-					<section>
-						<h3>Testing</h3>
-						<p>Tip: Make sure you communicate with campus police prior to testing!!!</p>
-						<img src="images/barney_fife.gif">
-						<aside class="notes">
-							<li>Tip: make sure you alert campus police that you are testing the system. While we communicated with the police chief about our first test, he didn't tell his officers, and needless to say their adrenaline was pumping!</li>
-							<li>By the way, I'm not saying our campus police are like Barney Fife...they're great.</li>
-						</aside>
-					</section>
-					<section>
-						<h3>Testing Results</h3>
-						<ul>
-							<li class="fragment fade-left white-text">"Live" tests with Campus Police - 2 minutes average response time.</li>
-						</ul>
-						<aside class="notes">
-							<li>Testing results - campus police were very responsive and responded with an average response time of 2 minutes for all areas tested (tested all buildings on campus)</li>
-						</aside>
-					</section>
-					<section data-background-image="images/launch.jpg">
-						<h3>Launch</h3>
-						<ul>
-							<li class="fragment fade-left white-text">November 2016</li>
-							<li class="fragment fade-left white-text">Information/education campaign leading up to launch</li>
-							<li class="fragment fade-left white-text">Created online user training</li>
-							<li class="fragment fade-left white-text">Deployed to client workstations via KACE system.</li>
-						</ul>
-						<aside class="notes">
-							<li>Launched in November 2016</li>
-							<li>Leading up to the launch, we conducted an information campaign where we met with departments to announce, sent e-mails, and created mandatory online training for faculty and staff to complete</li>
-							<li>So on to how we built this thing!</li>
-						</aside>
-					</section>
-				</section>
+        <section>
+            <section>
+                <h2>History/Background</h2>
+                <h3>Web Presence at Chattanooga State</h3>
 
-				<section data-background-image="images/panic-background-faded.jpg">
-					<section>
-						<h2>Technical Stuff!</h2>
-						<img src="images/programming-flames.gif">
-					</section>
-					<section data-transition="fade-in">
-						<img class="plain" src="images/panicapp1.png">
-					</section>
-					<section data-transition="fade-in">
-						<img class="plain" src="images/panicapp2.png">
-					</section>
-					<section data-transition="fade-in">
-						<img class="plain" src="images/panicapp3.png">
-					</section>
-					<section data-transition="fade-in">
-						<img class="plain" src="images/panicapp4.png">
-					</section>
-					<section data-transition="fade-in">
-						<img class="plain" src="images/panicapp5.png">
-					</section>
-					<section>
-						<h3>Technologies/Tools Used</h3>
-						<img class="plain" src="images/qt.png">
-						<img class="plain" src="images/cpp.png">
-						<img class="plain" src="images/druplicon-small.png">
-						<img class="plain" src="images/nodejs.png">
-						<img class="plain" src="images/socketio.png">
-					</section>
-					<section>
-						<h3>Why these technologies?</h3>
-						<p><img src="images/why.gif"></p>
-					</section>
-					<section>
-						<h3>Why QT/C++?</h3>
-						<p><img class="plain" src="images/qt.png">
-						<img class="plain" src="images/cpp.png"></p>
-						<ul>
-							<li class="fragment fade-left white-text">Cross-platform: can compile for Windows, Apple, Linux</li>
-							<li class="fragment fade-left white-text">I wanted to learn C++</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Why Drupal/NodeJS/Socket.io?</h3>
-						<img class="plain" src="images/druplicon-small.png">
-						<img class="plain" src="images/nodejs.png">
-						<img class="plain" src="images/socketio.png">
-						<ul>
-							<li class="fragment fade-left white-text">Drupal: Familiar with Drupal development/PHP</li>
-							<li class="fragment fade-left white-text">Drupal: Great user experience for customer</li>
-							<li class="fragment fade-left white-text">NodeJS: Needed an asynchronous event runtime that could communicate with my application</li>
-							<li class="fragment fade-left white-text">NodeJS: Wanted to learn NodeJS</li>
-							<li class="fragment fade-left white-text">Socket.io: Made bidirectional communication infinitely more simple to write</li>
+                <ul>
+                    <li>Circa 1990 - Early 2000s - FrontPage / Site hosted on Microsoft
+                        Infrastructure (IIS)
+                    </li>
+                </ul>
+                <img class="plain" src="images/erkel2.jpg">
+                <aside class="notes">
+                    <li>Introduce increase in campus safety issues</li>
+                    <li>We're all too aware of headlines</li>
+                </aside>
+            </section>
+            <section>
+                <p>Microsoft</p>
+                <img class="image-600" src="images/ewww.jpg">
+            </section>
+            <section>
+                <h2>History/Background</h2>
+                <h3>Web Presence at Chattanooga State</h3>
+                <ul>
+                    <li>2009: Omniupdate CMS / Linux Hosting On-site</li>
+                    <li>Other subsites on various platforms (Linux/Microsoft)</li>
+                </ul>
+                <aside class="notes">
+                    <li>Introduce increase in campus safety issues</li>
+                    <li>We're all too aware of headlines</li>
+                </aside>
+            </section>
+            <section>
+                <p>Microsoft</p>
+                <img class="image-600" src="images/ewww.jpg">
+            </section>
+            <section>
+                <h2>History/Background</h2>
+                <h3>Web Presence at Chattanooga State</h3>
+                <ul>
+                    <li>2013 to Present: Migration to Drupal CMS / Pantheon Hosting
+                        Off-site
+                    </li>
+                    <li>Other sites hosted mostly on Linux in Drupal CMS, on-site</li>
+                </ul>
+                <aside class="notes">
+                    <li>Introduce increase in campus safety issues</li>
+                    <li>We're all too aware of headlines</li>
+                </aside>
+            </section>
 
-						</ul>
-						<aside class="notes">
-							<li>Drupal is our CMS/development framework</li>
-							<li>familiarity with Drupal/PHP, Ability to create nice, easy to manage user experience for the web side of the project</li>
-							<li>NodeJS allows for asynchronous communication, which was needed for the dispatch element of the application</li>
-							<li>Socket.io made it easy to build the asynchronous bi-directional component of the application</li>
-						</aside>
-					</section>
-					<section>
-						<h3>Shameless Plug for Drupal Camp Chattanooga</h3>
-						<img class="plain" src="images/dcchatt_noyear_logo.png">
-						<p>Chattanooga State Community College</p>
-						<p>November 4, 2017</p>
-						<h4 class="white-text">https://drupalcampchattanooga.com/</h4>
-						<div class="free-stickers">Get a Free Sticker!!!</div>
-					</section>
-					<section>
-						<h3>Desktop Application</h3>
-						<ul>
-							<li class="fragment fade-left white-text">Built with Qt/C++</li>
-							<li class="fragment fade-left white-text">Gets information from logged in user/Active Directory</li>
-							<li class="fragment fade-left white-text">Sends alert to web backend (Drupal) using REST call</li>
-						</ul>
-						<aside class="notes">
-							<li>Cool thing is that there is a REST module for Drupal that is reasonably easy to set up.</li>
-						</aside>
-					</section>
-					<section>
-						<img class="plain" src="images/panic-overview-screen.png">
-					</section>
-					<section>
-						<h3>Web Backend</h3>
-						<ul>
-							<li class="fragment fade-left white-text">Built in Drupal</li>
-							<li class="fragment fade-left white-text">Acts as dispatch monitor</li>
-							<li class="fragment fade-left white-text">When alert is received, handles sending of messages to campus police</li>
-							<li class="fragment fade-left white-text alert-test">Once running, will alert the dispatcher audibly and visually with a popup message (NodeJS, Socket.io)</li>
-							<li class="fragment fade-left white-text"><a href="http://localhost/emergency-backend" target="_blank">Emergency Backend</a></li>
-					</section>
-				</section>
+        </section>
+        <section>
+            <section>
+                <h2>Why Change?</h2>
+                <aside class="notes">
+                    <li>Introduce project</li>
+                </aside>
+            </section>
+            <section>
+                <p>Microsoft</p>
+                <img class="image-600" src="images/ewww.jpg">
+            </section>
+            <section>
+                <h3>Wide Range of Products/Technologies</h3>
+                <ul>
+                    <li>Web Calendar - Bedework, then Wordpress</li>
+                    <li>OmniUpdate - enterprise CMS</li>
+                    <li>Hard-coded sites</li>
+                    <li>Custom CMS for athletic roster, catalog management, and schedule
+                        management
+                    </li>
+                </ul>
+                <aside class="notes">
+                    <li>Dr. Tydings, who was our president at the time, approached the Technology
+                        Division with the project...Athens Tech had developed a similar system,
+                        which they referred to as the "panic" button.
+                    </li>
+                    <li>She approached our Associate VP with the possibility of developing something
+                        similar, and he approached me "We can do this, right?" :)
+                    </li>
+                    <li>I began development in February of 2016</li>
+                </aside>
+            </section>
+            <section>
+                <h3>Road to Drupal</h3>
+                <ul>
+                    <li>2013: OmniUpdate expensive and contract up for renewal!</li>
+                    <li>Enter Open Source</li>
+                    <li>The Contenders: Joomla, Wordpress, Drupal</li>
+                </ul>
+                <img class="image-300" style="float: right;" src="images/rumble.gif">
+                <aside class="notes">
+                    <li>First prototype presented to President Tydings</li>
+                    <li>Basic functionality, location from computer, ability to send message.</li>
+                </aside>
+            </section>
+            <section>
+                <h3>The Contenders</h3>
+                <li>Joomla: Too cumbersome</li>
+                <li>Wordpress: Familiar but vulnerable</li>
+                <li>Drupal: Flexibility</li>
+                <img class="image-200" style="float:right;" src="images/lego.jpg">
+                <aside class="notes">
+                    <li>Lego example</li>
+                </aside>
+            </section>
+            <section>
+                <h3>The Winner: Drupal (Why?)</h3>
+                <ul>
+                    <li>Security</li>
+                    <li>Community Support</li>
+                    <li>Flexibility</li>
+                    <li>Cost Effective</li>
+                </ul>
+            </section>
+        </section>
 
-				</section>
-				<section data-background-image="images/panic-background-faded.jpg">
-					<section>
-						<h2>Application Overview and Operation</h2>
-					</section>
-					<section>
-						<h3>Basic Operation</h3>
-						<ul>
-							<li class="fragment fade-left white-text">Open the application by double-clicking Emergency Desktop Icon &nbsp;<img style="width: 50px; vertical-align: middle;" class="plain" src="images/emergency.png"></li>
-							<li class="fragment fade-left white-text">User clicks one of the presets, then clicks the "Send Alert" button.</li>
-						</ul>
-					</section>
-					<section>
-						<img class="plain" src="images/emergency-alert-system-diagram.jpg">
-					</section>
-					<section>
-						<h3>Campus Security Response</h3>
-						<ul>
-							<li class="fragment fade-left white-text">Campus security alerted via text message to security mobile phones.</li>
-							<li class="fragment fade-left white-text">Dispatcher notified via Web interface with audible warning and emergency details.</li>
-							<li class="fragment fade-left white-text">Security deployed to reported location.</li>
-						</ul>
-					</section>
-				</section>
+        <section>
+            <section>
+                <h2>Researching Drupal</h2>
+                <img src="images/programming-flames.gif">
+                <aside class="notes">
+                    <li>Not a lot of time to get up to speed after we decided to drop
+                        OmniUpdate.
+                    </li>
+                </aside>
+            </section>
+            <section>
+                <h3>Meeting the Community</h3>
+                <li>Found Meet-up on Drupal.org</li>
+                <li>Attended first Meet-up on March 16th, 2013</li>
+                <li>Attended Florida DrupalCamp April 2013</li>
+                <aside class="notes">
+                    <li>Charles Experiences</li>
+                </aside>
+            </section>
+            <section>
+                <h3>IT Level-up</h3>
+                <li>Exposed to Drupal 11 years ago</li>
+                <li>Examined current IT-supported projects</li>
+                <li>Started self-training</li>
+                <li>Started attending Meet-ups</li>
+                <img style="float: right" class="image-300" src="images/bill-drupal.jpg">
+            </section>
+        </section>
 
-				<section data-background-image="images/panic-background-faded.jpg">
-					<section>
-						<h2>Lessons Learned</h2>
-					</section>
-					<section>
-						<h3>Our Campus Police Rock!</h3>
-						<img style="width: 400px;" class="plain" src="images/approve.gif">
-						<aside class="notes">
-							<li>I can't say enough about our campus police. They were very supportive and we could not have succeeded without them.</li>
-						</aside>
-					</section>
-					<section>
-						<h3>Communication is Key</h3>
-						<ul>
-							<li class="fragment fade-left white-text">Even with lots of communication, there was a little confusion</li>
-							<li class="fragment fade-left white-text">Excerpt of alert received: <span class="white-text">"This is just a notification to please make note that my office is now located in room HSC 1058 ( you had 1059 above)"</span></li>
-						</ul>
-					</section>
-					<section>
-						<h3>Test, Test, and Test Again</h3>
-						<img class="plain" src="images/crash.gif">
-					</section>
-				</section>
+        <section>
+            <section>
+                <h2>Selling Drupal</h2>
+            </section>
+            <section>
+                <h3>Selling to Marketing</h3>
+                <li>Presented to Marketing VP, Supervisor, and Director</li>
+                <aside class="notes">
+                    <li>Presented why Drupal best solution</li>
+                </aside>
+            </section>
+            <section>
+                <h3>Selling Points</h3>
+                <li>Save $5000/year</li>
+                <li>Dedicated Security</li>
+                <li>Stringent contribution policies</li>
+                <li>Large community involvement</li>
+            </section>
+            <section>
+                <h3>Selling Points (continued)</h3>
+                <li>Local Assistance</li>
+                <li>Large Adoption by University and other large organizations</li>
+                <li>Tennesee Board of Regents adoption (our governing body)</li>
+                <img class="image-50 plain" src="images/nasa.png">
+                <img class="image-50 plain" src="images/soccer.png">
+                <img class="image-50 plain" src="images/pinterest.png">
+                <img class="image-200 plain" src="images/doelogo.jpg">
+                <img class="image-200 plain" src="images/princeton.png">
 
-				<section data-background-image="images/panic-background-faded.jpg">
-					<section>
-						<h2>Limitations</h2>
-						<ul>
-							<li class="fragment fade-left white-text">Works well in situations where students can't see screen</li>
-							<li class="fragment fade-left white-text">Still difficult to use in a lab situation where instructor workstations are projecting to a screen</li>
-						</ul>
-					</section>
-				</section>
-				<section data-background-image="images/panic-background-faded.jpg">
-					<section>
-						<h2>Future Development</h2>
-					</section>
-					<section>
-						<h3>Under development: Mobile application</h3>
-						<img class="plain" src="images/mobile-app.png">
-					</section>
-					<section>
-						<h3>Concept</h3>
-						<img class="plain" src="images/rpzerowithswitch.jpg">
-						<ul>
-							<li>Hardware panic button for instructor workstations (Raspberry Pi Zero that communicates with web backend)</li>
-						</ul>
-					</section>
-					</section>
+            </section>
+            <section>
+                <h3>Selling to IT Services</h3>
+                <li>Security</li>
+                <li>Improved Workflow</li>
+                <li>Improved Collaboration</li>
+                <li>Fits Disaster Recovery Plan - off-site hosting</li>
+                <li>Beginning of our "dream" team</li>
+                <aside class="notes">
+                    <li>Pretty much my decision - one man show</li>
+                </aside>
+            </section>
+        </section>
 
-					<section data-background-image="images/panic-background-faded.jpg">
-						<section>
-							<h2>Results</h2>
-						</section>
-						<section>
-							<h3>Show me the money!</h3>
-							<img style="width: 400px;" class="plain" src="images/obiwan.gif">
-							<ul>
-								<li class="fragment fade-left white-text">I don't have a fancy infographic, but our police chief tells me that we saved approximately $15K from his budget</li>
-							</ul>
-						</section>
-						<section>
-							<h3>Fortunately have not had to utilize this application</h3>
-							<ul>
-								<li class="fragment fade-left white-text">Faculty/staff have indicated that they feel safer having access to tool</li>
-							</ul>
-						</section>
-						<aside class="notes">
-							<li>Perhaps the only application I've ever built that is better if it's not utilized!</li>
-							<li>Faculty/staff feel safer--to me, this is the biggest win of all!</li>
-						</aside>
-					</section>
+        <section>
+            <section>
+                <h2>How did we do it?</h2>
+                <h3>The Nuts and Bolts of Converting to Drupal</h3>
+            </section>
+            <section>
+                <h3>The Voice of Experience</h3>
+                <li>Contracted with CodeJourneymen (AKA Lee Walker) for Site Discovery</li>
+                <img class="image-400" src="images/lee-charles.jpg">
+            </section>
+            <section>
+                <h3>The Voice of Experience (continued)</h3>
+                <li>Reviewed content of existing site</li>
+                <li>Talked through intended features</li>
+                <li>Walked us through a proper Drupal workflow</li>
+            </section>
+            <section>
+                <h3>Time to Build It (or lack of time)</h3>
+                <img class="plain image-400" src="images/cms-learning-curve.jpg">
+                <aside class="notes">
+                    <li>Since we decided to kill our old CMS, we had about 3 months to get site
+                    migrated.</li>
+                    <li>Talk about learning curve.</li>
+                    <li>Needless to say, we moved at an accelerated pace.</li>
+                </aside>
+            </section>
+            <section>
+                <h3>Build Team</h3>
+                <li>Marketing: 1 designer, 1 designer/developer</li>
+                <li>IT Services: 1 developer</li>
+            </section>
+            <section>
+                <h3>Major Challenges</h3>
+                <li>Migration of Content from Enterprise CMS</li>
+                <li>Catalog Integration</li>
+                <li>Building an Enterprise level site while learning</li>
+            </section>
+        </section>
 
-				</section>
+        <section>
+            <section>
+                <h2>Other Drupal Projects on Campus</h2>
+            </section>
+            <section>
+                <h3>IT Services Focused</h3>
+                <li>IT Services Main Site</li>
+                <li>IT Services Workflows and Access Request</li>
+            </section>
+            <section>
+                <h3>Campus Focused</h3>
+                <li>TigerWeb (Student Portal - replaced enterprise Ellucian Luminis)</li>
+                <li>Campus Directory</li>
+                <li>The Daily Bengal (Employee Portal - under development)</li>
+                <li>TCAT Time Tracking System</li>
+                <aside class="notes">
+                    <li>Demo sites?</li>
+                </aside>
+            </section>
+            <section>
+                <h3>Future Projects</h3>
+                <li>All new sites in Drupal 8</li>
+                <li>Conversion of Drupal 7 sites to Drupal 8</li>
+                <li>Conversion of paper forms to electronic workflows</li>
 
-				<section data-background-image="images/panic-background-faded.jpg">
-					<h2>Questions/Comments?</h2>
-				</section>
+            </section>
+        </section>
 
-				<section data-background-image="images/panic-background-faded.jpg">
-					<h2>Thank You!</h2>
-					<h3>Bill Crum</h3>
-					<h5><i class="fa fa-envelope"></i> <a href="mailto:bill.crum@chattanoogastate.edu">bill.crum@chattanoogastate.edu</a></h5>
-					<h5><i class="fa fa-phone"></i> (423) 697-2639</a></h5>
-					<h5><i class="fa fa-github"></i> <a href="http://tiny.cc/panicfcf">http://tiny.cc/panicfcf</a> (slides)</h5>
-				</section>
+        <section>
+            <h2>Questions/Comments?</h2>
+        </section>
 
-			</div>
-		</div>
+        <section data-background-image="images/panic-background-faded.jpg">
+            <h2>Thank You!</h2>
+            <h3>Bill Crum</h3>
+            <h5><i class="fa fa-envelope"></i> <a href="mailto:bill.crum@chattanoogastate.edu">bill.crum@chattanoogastate.edu</a>
+            </h5>
+            <h5><i class="fa fa-phone"></i> (423) 697-2639</a></h5>
+            <h5><i class="fa fa-github"></i> <a href="http://tiny.cc/panicfcf">http://tiny.cc/panicfcf</a>
+                (slides)</h5>
+        </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    </div>
+</div>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
-				transition: 'concave',
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+        transition: 'concave',
 
-			function notifyMe(alerttype) {
-				// Let's check if the browser supports notifications
-				if (!("Notification" in window)) {
-					alert("This browser does not support system notifications");
-				}
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
 
-				// Let's check whether notification permissions have already been granted
-				else if (Notification.permission === "granted") {
-					// If it's okay let's create a notification
-					var options = {
-						body: "An alert has been activated.",
-						icon: 'http://itsdev.cstcc.lan/emergency_backend/sites/default/files/alert-icon.png',
-					}
-					var audio = new Audio('http://itsdev.cstcc.lan/emergency_backend/sites/default/files/weather-alert.mp3');
-					audio.play();
-					var notification = new Notification(alerttype+" alert!",options);
-				}
+    function notifyMe(alerttype) {
+        // Let's check if the browser supports notifications
+        if (!("Notification" in window)) {
+            alert("This browser does not support system notifications");
+        }
 
-				// Otherwise, we need to ask the user for permission
-				else if (Notification.permission !== 'denied') {
-					Notification.requestPermission(function (permission) {
-						// If the user accepts, let's create a notification
-						if (permission === "granted") {
-							var options = {
-								body: "An alert has been activated.",
-								icon: 'http://itsdev.cstcc.lan/emergency_backend/sites/default/files/alert-icon.png'
-							}
-							var audio = new Audio('http://itsdev.cstcc.lan/emergency_backend/sites/default/files/alert-chime.mp3');
-							audio.play();
-							var notification = new Notification(alerttype+" alert !",options);
-						}
-					});
-				}
+        // Let's check whether notification permissions have already been granted
+        else if (Notification.permission === "granted") {
+            // If it's okay let's create a notification
+            var options = {
+                body: "An alert has been activated.",
+                icon: 'http://itsdev.cstcc.lan/emergency_backend/sites/default/files/alert-icon.png',
+            }
+            var audio = new Audio('http://itsdev.cstcc.lan/emergency_backend/sites/default/files/weather-alert.mp3');
+            audio.play();
+            var notification = new Notification(alerttype + " alert!", options);
+        }
 
-				// Finally, if the user has denied notifications and you
-				// want to be respectful there is no need to bother them any more.
-			}
-			$('li.alert-test').click(function(){
-				notifyMe("Test notification");
-			});
-		</script>
-	</body>
+        // Otherwise, we need to ask the user for permission
+        else if (Notification.permission !== 'denied') {
+            Notification.requestPermission(function (permission) {
+                // If the user accepts, let's create a notification
+                if (permission === "granted") {
+                    var options = {
+                        body: "An alert has been activated.",
+                        icon: 'http://itsdev.cstcc.lan/emergency_backend/sites/default/files/alert-icon.png'
+                    }
+                    var audio = new Audio('http://itsdev.cstcc.lan/emergency_backend/sites/default/files/alert-chime.mp3');
+                    audio.play();
+                    var notification = new Notification(alerttype + " alert !", options);
+                }
+            });
+        }
+
+        // Finally, if the user has denied notifications and you
+        // want to be respectful there is no need to bother them any more.
+    }
+
+    $('li.alert-test').click(function () {
+        notifyMe("Test notification");
+    });
+</script>
+</body>
 </html>
